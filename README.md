@@ -1,19 +1,81 @@
 # Bussinessonbot
 
-Backend
+This project is a REST API built using Flask-RESTful and Flask-SQLAlchemy. It provides endpoints for searching bank branches in India.
 
-You need to create a REST service that can fetch bank details, using the data given in the API’s query parameters. You can use the data available in this Link in your backend DB
+Requirements
+Python 3.x
+Flask
+Flask-RESTful
+Flask-SQLAlchemy
 
-Case 1
 
- Search API to return possible matches across all columns and all rows, ordered by IFSC code (ascending order) with limit and offset.
+Installation
+Clone this repository or download the ZIP file.
+Install the required packages using pip install -r requirements.txt.
+Set the SQLALCHEMY_DATABASE_URI variable in the app.py file to point to your database file.
+Run the app using python app.py.
 
-Request URL  - /api/search?q=Mumbai&limit=2&offset=1 
 
-Case 2
+API Endpoints
+GET /api/search
+This endpoint returns a list of bank branches that match the given search query. The query is case-insensitive and can match any of the following fields:
 
- Branch API to return possible matches based on the branch name ordered by IFSC code (descending order) with limit and offset
+Bank Name
+IFSC Code
+Branch Name
+Address
+City
+District
+State
+The response contains an array of bank branch objects. Each object has the following fields:
 
-Request URL  - /api/branch?q=LONI&limit=1&offset=1 
+ifsc: IFSC code of the branch
+bank_id: ID of the bank
+branch: Name of the branch
+address: Address of the branch
+city: City of the branch
+district: District of the branch
+state: State of the branch
+bank_name: Name of the bank
+
+
+Query Parameters:
+
+q (required): Search query
+limit (optional, default: 10): Maximum number of branches to return
+offset (optional, default: 0): Offset for pagination
+
+
+
+GET /api/branch
+This endpoint returns a list of bank branches that match the given search query. The query is case-insensitive and can match any of the following fields:
+
+Bank Name
+IFSC Code
+Branch Name
+Address
+City
+District
+State
+The response contains an array of bank branch objects. Each object has the following fields:
+
+ifsc: IFSC code of the branch
+bank_id: ID of the bank
+branch: Name of the branch
+address: Address of the branch
+city: City of the branch
+district: District of the branch
+bank_name: Name of the bank
+
+
+Query Parameters:
+
+q (required): Search query
+limit (optional, default: 10): Maximum number of branches to return
+offset (optional, default: 0): Offset for pagination
+
+
+
+
 
 
