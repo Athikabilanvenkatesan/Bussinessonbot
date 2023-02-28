@@ -76,6 +76,26 @@ limit (optional, default: 10): Maximum number of branches to return
 offset (optional, default: 0): Offset for pagination
 
 
+# Output
+
+Case 1
+
+ Search API to return possible matches across all columns and all rows, ordered by IFSC code (ascending order) with limit and offset.
+
+
+![image](https://user-images.githubusercontent.com/113780724/221828578-2e3b6013-f77d-4da3-baa8-d45a01b25665.png)
+
+Case 2
+
+ Branch API to return possible matches based on the branch name ordered by IFSC code (descending order) with limit and offset
+
+
+![image](https://user-images.githubusercontent.com/113780724/221829696-010852e4-2a01-4612-b4bc-0edd7f1ee34e.png)
+
+
+
+
+
 
 
 
