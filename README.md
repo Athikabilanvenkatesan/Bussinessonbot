@@ -2,22 +2,23 @@
 
 This project is a REST API built using Flask-RESTful and Flask-SQLAlchemy. It provides endpoints for searching bank branches in India.
 
-Requirements
+#Requirements
 Python 3.x
 Flask
 Flask-RESTful
 Flask-SQLAlchemy
 
 
-Installation
+#Installation
 Clone this repository or download the ZIP file.
 Install the required packages using pip install -r requirements.txt.
 Set the SQLALCHEMY_DATABASE_URI variable in the app.py file to point to your database file.
 Run the app using python app.py.
 
 
-API Endpoints
-GET /api/search
+#API Endpoints
+
+#GET /api/search
 This endpoint returns a list of bank branches that match the given search query. The query is case-insensitive and can match any of the following fields:
 
 Bank Name
@@ -47,7 +48,7 @@ offset (optional, default: 0): Offset for pagination
 
 
 
-GET /api/branch
+#GET /api/branch
 This endpoint returns a list of bank branches that match the given search query. The query is case-insensitive and can match any of the following fields:
 
 Bank Name
