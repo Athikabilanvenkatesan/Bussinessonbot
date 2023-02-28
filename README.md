@@ -3,10 +3,10 @@
 This project is a REST API built using Flask-RESTful and Flask-SQLAlchemy. It provides endpoints for searching bank branches in India.
 
 # Requirements
-Python 3.x
-Flask
-Flask-RESTful
-Flask-SQLAlchemy
+* Python 3.x
+* Flask
+* Flask-RESTful
+* Flask-SQLAlchemy
 
 
 # Installation
